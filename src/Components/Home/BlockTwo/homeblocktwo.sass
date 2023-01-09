@@ -1,0 +1,60 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.container-homeblocktwo
+    width: 100vw
+    height: 750px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: variables.$font-family
+    color: variables.$white
+    background-color: variables.$deepJungleGreen
+    overflow: hidden
+
+    .bg
+        width: 250px
+        position: relative
+        left: 800px
+        bottom: 120px
+
+    .homeblocktwo-content
+        width: 75%
+        height: 50%
+        display: flex 
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        margin-top: 300px
+
+        h2
+            font-size: 60px
+            width: 45%
+            position: relative 
+            bottom: 200px
+
+    .container-right
+        width: 45%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        div
+            display: flex
+            flex-direction: row
+            margin-bottom: 50px
+
+            img 
+                margin-right: 30px
+                width: 100px
+                height: 100px
+            div
+                margin-top: 30px
+                display: flex
+                flex-direction: column
+
+                h3
+                    margin-bottom: 10px
+                    color: variables.$lightCoral
+

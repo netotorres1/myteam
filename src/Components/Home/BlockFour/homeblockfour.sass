@@ -1,0 +1,38 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+    
+.container-homeblockfour
+    width: 100vw
+    height: 300px
+    display: flex 
+    justify-content: center
+    position: relative
+    background-color: variables.$lightCoral
+    font-family: variables.$font-family
+    color: variables.$deepJungleGreen
+
+    .bg
+        width: 220px
+        position: relative
+        left: -100px
+ 
+
+    .homeblockfour-content
+        width: 75%
+        display: flex 
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+
+        h2
+            font-size: 70px
+        button
+            padding: 15px
+            padding-left: 35px
+            padding-right: 35px
+            border-radius: 30px
+            background-color: transparent
+            border: 3px solid variables.$deepJungleGreen
+            color: variables.$deepJungleGreen
+            font-size: 20px
+            font-weight: bold

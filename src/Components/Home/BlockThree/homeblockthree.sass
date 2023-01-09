@@ -1,0 +1,78 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.container-homeblockthree
+    width: 100vw
+    height: 1000px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-family: variables.$font-family
+    color: variables.$white
+    background-color: variables.$midnightGreen
+
+    .bg1
+        width: 200px
+        position: relative
+        right: 750px
+    .bg2
+        width: 300px
+        position: relative
+        left: 650px
+
+    .homeblockthree-container
+        width: 75%
+        display: flex 
+        flex-direction: column
+        align-items: center
+        margin-bottom: 100px
+
+        h2
+            font-size: 40px
+            width: 65%
+            text-align: center
+            margin-bottom: 20px
+        .span
+            color: variables.$raptureBlue
+
+        .container-quotes
+            display: flex
+            flex-direction: row
+
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-between
+                height: 400px
+                width: 32%
+
+                .quotes
+                    width: 70px
+                    position: relative 
+                    top: 15px
+                    z-index: 0
+                p
+                    font-size: 20px
+                    text-align: center
+                    z-index: 1
+                    line-height: 35px
+                    margin-bottom: 50px
+                span
+                    position: relative
+                    bottom: 0px
+                    font-style: italic
+                    font-weight: 100
+                
+                h3
+                    color: variables.$raptureBlue
+                img
+                    margin-top: 50px
+
+                .avatar
+                    width: 80px
+                    border-radius: 50%
+                    border: 3px solid variables.$white
+
+            

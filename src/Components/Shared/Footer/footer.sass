@@ -1,0 +1,57 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.container-footer
+    width: 100vw
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: variables.$font-family
+    color: variables.$raptureBlue
+    background-color: variables.$darkGreen
+
+    .footer-content
+
+        width: 75%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 50%
+
+        .container-left
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            width: 40%
+
+            .container-left-address
+                display: flex 
+                flex-direction: column
+                justify-content: space-between
+
+            .container-left-logo
+                display: flex 
+                flex-direction: column
+                justify-content: space-between
+
+                .logo
+                    width: 150px
+                    height: 50px
+
+                button
+                    background-color: transparent 
+                    margin-right: 30px
+                    border: none
+                    color: variables.$white
+                    font-size: 20px
+
+        .container-right
+            display: flex 
+            flex-direction: column
+            align-items: flex-end
+            justify-content: space-between
+
+            .container-right-media
+                img
+                    margin-right: 20px
