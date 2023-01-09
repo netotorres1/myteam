@@ -10,7 +10,9 @@
     font-family: variables.$font-family
     color: variables.$raptureBlue
     background-color: variables.$darkGreen
-
+    @include mixins.mobile 
+        height: 600px
+        width: 380px 
     .footer-content
 
         width: 75%
@@ -21,6 +23,10 @@
         @include mixins.tablet 
             flex-direction: column
             width: 90%
+        @include mixins.mobile
+            
+            justify-content: center
+            align-items: center
 
         .container-left
             display: flex
@@ -28,30 +34,38 @@
             justify-content: space-between
             width: 40%
             @include mixins.tablet 
-                width: 100%
-
-            @include mixins.tablet 
+                width: 100% 
                 flex-direction: row
+            @include mixins.mobile 
+                flex-direction: column
+                align-items: center
 
             .container-left-address
                 display: flex 
                 flex-direction: column
                 justify-content: space-between 
+                @include mixins.mobile 
+                    margin-top: 40px
 
                 span
                     @include mixins.tablet 
                         margin-bottom: 10px   
-                        text-align: right             
+                        text-align: right
+                    @include mixins.mobile 
+                        text-align: center           
 
             .container-left-logo
                 display: flex 
                 flex-direction: column
                 justify-content: space-between
+                
 
                 div
                     @include mixins.tablet 
                         display: flex 
                         flex-direction: row
+                        margin-top: 30px
+
 
                 .logo
                     width: 150px
@@ -63,6 +77,10 @@
                     border: none
                     color: variables.$white
                     font-size: 20px
+                    @include mixins.mobile 
+                        margin-right: 0px
+                        margin: 10px
+                    
 
                     &:hover
                         color: variables.$lightCoral
@@ -77,8 +95,14 @@
             @include mixins.tablet 
                  flex-direction: row
                  margin-top: 30px
+            @include mixins.mobile 
+                flex-direction: column
+                align-items: center
 
             .container-right-media
-                    
                 img
                     margin-right: 20px
+                    @include mixins.mobile
+                        margin-bottom: 20px
+                        margin: 10px
+

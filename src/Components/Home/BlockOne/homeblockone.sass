@@ -10,6 +10,10 @@
     display: flex
     align-items: center
     justify-content: center
+    @include mixins.mobile 
+        width: 380px
+        height: 550px
+
     .homeblockone-content
         width: 75%
         height: 100%
@@ -28,6 +32,9 @@
             align-items: flex-end
             justify-content: space-between
 
+            @include mixins.mobile 
+                width: 100%
+
             @include mixins.tablet 
                 flex-direction: column
                 align-items: center
@@ -39,12 +46,17 @@
                     font-size: 50px
                     text-align: center
                     margin-bottom: 20px
+                @include mixins.mobile
+                    width: 80%
+                    font-size: 40px
             p
                 width: 30%
                 line-height: 30px
                 @include mixins.tablet
                     width: 90%
                     text-align: center
+                @include mixins.mobile
+                    width: 100%
             .bg1
                 position: absolute
                 left: -130px
