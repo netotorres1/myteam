@@ -18,6 +18,9 @@
         align-items: flex-end
         justify-content: space-between
 
+        @include mixins.tablet 
+            align-items: center
+
         div
             margin-top: 100px
             display: flex
@@ -25,15 +28,29 @@
             align-items: flex-end
             justify-content: space-between
 
+            @include mixins.tablet 
+                flex-direction: column
+                align-items: center
+
             h2
                 font-size: 100px
                 width: 50%
+                @include mixins.tablet 
+                    font-size: 50px
+                    text-align: center
+                    margin-bottom: 20px
             p
                 width: 30%
                 line-height: 30px
+                @include mixins.tablet
+                    width: 90%
+                    text-align: center
             .bg1
                 position: absolute
                 left: -130px
                 width: 14%
+                @include mixins.tablet
+                    display: none
+
             .talent
                 color: variables.$lightCoral

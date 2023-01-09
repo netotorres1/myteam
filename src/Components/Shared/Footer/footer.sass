@@ -18,22 +18,40 @@
         flex-direction: row
         justify-content: space-between
         height: 50%
+        @include mixins.tablet 
+            flex-direction: column
+            width: 90%
 
         .container-left
             display: flex
             flex-direction: row
             justify-content: space-between
             width: 40%
+            @include mixins.tablet 
+                width: 100%
+
+            @include mixins.tablet 
+                flex-direction: row
 
             .container-left-address
                 display: flex 
                 flex-direction: column
-                justify-content: space-between
+                justify-content: space-between 
+
+                span
+                    @include mixins.tablet 
+                        margin-bottom: 10px   
+                        text-align: right             
 
             .container-left-logo
                 display: flex 
                 flex-direction: column
                 justify-content: space-between
+
+                div
+                    @include mixins.tablet 
+                        display: flex 
+                        flex-direction: row
 
                 .logo
                     width: 150px
@@ -46,12 +64,21 @@
                     color: variables.$white
                     font-size: 20px
 
+                    &:hover
+                        color: variables.$lightCoral
+                        cursor: pointer
+
         .container-right
             display: flex 
             flex-direction: column
             align-items: flex-end
             justify-content: space-between
 
+            @include mixins.tablet 
+                 flex-direction: row
+                 margin-top: 30px
+
             .container-right-media
+                    
                 img
                     margin-right: 20px

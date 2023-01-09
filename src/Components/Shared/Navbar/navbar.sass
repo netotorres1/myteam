@@ -7,6 +7,9 @@
     display: flex
     justify-content: center
     background-color: variables.$midnightGreen
+    @include mixins.tablet 
+        width: 768px
+        height: 150px
 
     .container-content
         width: 75%
@@ -14,7 +17,10 @@
         flex-direction: row
         align-items: center
         justify-content: space-between
-    
+
+        @include mixins.tablet 
+            width: 90%
+            
         div
             display: flex
             flex-direction: row

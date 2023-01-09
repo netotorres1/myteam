@@ -11,15 +11,23 @@
     font-family: variables.$font-family
     color: variables.$white
     background-color: variables.$midnightGreen
+    @include mixins.tablet 
+        width: 768px
+        height: 1800px
 
     .bg1
         width: 200px
         position: relative
         right: 750px
+        @include mixins.tablet 
+            right: 300px
     .bg2
         width: 300px
         position: relative
         left: 650px
+        @include mixins.tablet 
+            left: 233px
+            bottom: 105px
 
     .homeblockthree-container
         width: 75%
@@ -28,17 +36,27 @@
         align-items: center
         margin-bottom: 100px
 
+        @include mixins.tablet 
+            width: 90%
+
         h2
             font-size: 40px
             width: 65%
             text-align: center
             margin-bottom: 20px
+            @include mixins.tablet
+                width: 85%
+
         .span
             color: variables.$raptureBlue
 
         .container-quotes
             display: flex
             flex-direction: row
+            @include mixins.tablet 
+                flex-direction: column
+                align-items: center
+                justify-content: space-between
 
             div
                 display: flex
@@ -47,6 +65,10 @@
                 justify-content: space-between
                 height: 400px
                 width: 32%
+                @include mixins.tablet 
+                    height: 200px
+                    width: 90%
+                    margin-bottom: 250px
 
                 .quotes
                     width: 70px

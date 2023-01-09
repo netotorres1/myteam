@@ -10,11 +10,18 @@
     background-color: variables.$lightCoral
     font-family: variables.$font-family
     color: variables.$deepJungleGreen
+    
+    @include mixins.tablet 
+        width: 768px
 
     .bg
         width: 220px
         position: relative
         left: -100px
+        @include mixins.tablet
+            left: 0px
+            top: 130px
+            height: 170px
  
 
     .homeblockfour-content
@@ -23,9 +30,18 @@
         flex-direction: row
         align-items: center
         justify-content: space-between
+        @include mixins.tablet
+            width: 100%
+            position: relative 
+            right: 130px
 
         h2
             font-size: 70px
+
+            @include mixins.tablet 
+                font-size: 30px
+
+
         button
             padding: 15px
             padding-left: 35px
@@ -36,3 +52,8 @@
             color: variables.$deepJungleGreen
             font-size: 20px
             font-weight: bold
+
+            &:hover
+                background-color: variables.$deepJungleGreen
+                color: variables.$white
+                cursor: pointer

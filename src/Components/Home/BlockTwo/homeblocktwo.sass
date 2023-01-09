@@ -12,12 +12,17 @@
     color: variables.$white
     background-color: variables.$deepJungleGreen
     overflow: hidden
+    @include mixins.tablet 
+        width: 768px
 
     .bg
         width: 250px
         position: relative
         left: 800px
         bottom: 120px
+        @include mixins.tablet 
+            left: 400px
+            bottom: 700px
 
     .homeblocktwo-content
         width: 75%
@@ -28,22 +33,40 @@
         justify-content: space-between
         margin-top: 300px
 
+        @include mixins.tablet 
+            flex-direction: column
+            height: 80%
+            width: 90%
+
         h2
             font-size: 60px
             width: 45%
             position: relative 
             bottom: 200px
+            @include mixins.tablet 
+                font-size: 30px
+                bottom: 0px
+                right: 70px
+                width: 70%
+                margin-bottom: 50px
 
     .container-right
         width: 45%
         display: flex
         flex-direction: column
         justify-content: space-between
+        @include mixins.tablet 
+            width: 90%
 
         div
             display: flex
             flex-direction: row
             margin-bottom: 50px
+
+            @include mixins.tablet 
+                margin-bottom: 0px
+                width: 100%
+                margin-bottom: 30px
 
             img 
                 margin-right: 30px
