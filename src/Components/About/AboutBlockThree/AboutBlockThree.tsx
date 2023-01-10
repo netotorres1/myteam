@@ -12,7 +12,7 @@ const bg = require('./../../../assets/bg-pattern-about-4.svg').default;
 const AboutBlockThree = () => {
   return (
     <section className='container-aboutblockthree'>
-        <img className='bg' src={bg} />
+        <img alt='background' className='bg' src={bg} />
         <div className='aboutblockthree-content'>
             <h2>Some of our clients</h2>
             <div>
