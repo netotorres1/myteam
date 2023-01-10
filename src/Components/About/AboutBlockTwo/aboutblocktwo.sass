@@ -1,0 +1,235 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.container-aboutblocktwo
+    width: 100vw
+    height: 1010px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-color: variables.$deepJungleGreen
+    color: variables.$white
+    font-family: variables.$font-family
+    overflow: hidden
+    @include mixins.tablet 
+        height: 1250px
+        padding-bottom: 60px
+    @include mixins.mobile 
+        width: 380px
+        height: 2100px
+    
+
+    h2
+        font-size: 50px
+        margin-bottom: 50px
+        @include mixins.mobile 
+            width: 90%
+            font-size: 35px
+            margin-left: 7px
+
+    .bg1
+        position: relative 
+        right: 800px
+        @include mixins.tablet 
+            top: 55px
+            right: 390px
+        @include mixins.mobile 
+            top: -25px
+            right: 190px
+    .bg2
+        position: relative 
+        left: 730px
+        @include mixins.tablet 
+            left: 310px
+        @include mixins.mobile 
+            top: -17px
+            left: 130px
+
+    .aboutblocktwo-content
+        width: 75%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        @include mixins.mobile 
+            width: 100%
+            justify-content: center
+
+        div 
+            width: 30%
+            height: 250px
+            padding-top: 20px
+            background-color: variables.$sacramentoStateGreen
+            display: flex 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-bottom: 50px
+            position: relative
+            @include mixins.tablet 
+                width: 48%
+            @include mixins.mobile 
+                width: 90%
+
+            img
+                width: 90px
+                border-radius: 50%
+                border: 3px solid variables.$white
+                margin-bottom: 20px
+            
+            h3
+                margin-bottom: 20px
+                color: variables.$raptureBlue
+            .btnopen
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 50px
+                height: 50px
+                padding: 20px
+                border-radius: 50%
+                background-color: variables.$lightCoral
+                border: none
+                position: relative 
+                top: 30px
+                z-index: 1
+            .btnclose
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 50px
+                height: 50px
+                padding: 20px
+                border-radius: 50%
+                background-color: variables.$raptureBlue
+                border: none
+                position: relative 
+                top: 30px
+                z-index: 1
+            button
+                background-color: transparent
+                border: none
+                
+            .icon
+                border: none
+                width: 20px
+                heigth: 20px
+                position: relative 
+                top: 10px
+
+
+            .nikita
+                display: none
+            .nikitaopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none
+            .christian
+                display: none
+            .cruz
+                display: none
+            .drake
+                display: none
+            .griffin
+                display: none
+            .aden
+                display: none
+            .christianopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none
+            .cruzopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none
+            .drakeopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none
+            .griffinopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none
+            .adenopen
+                display: flex
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 0
+                p
+                    width: 70%
+                    text-align: center
+                .media
+                    display: flex
+                    flex-direction: row
+                    img
+                        width: 30px
+                        margin: 10px
+                        border-radius: 0px
+                        border: none

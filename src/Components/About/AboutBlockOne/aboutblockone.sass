@@ -1,0 +1,84 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+    
+.container-aboutblockone
+    z-index: 0
+    width: 100vw
+    height: 600px
+    display: flex
+    justify-content: center
+    font-family: variables.$font-family
+    background-color: variables.$midnightGreen
+    color: variables.$white
+    overflow: hidden
+    @include mixins.tablet 
+        width: 768px
+        height: 450px
+        align-items: center
+    @include mixins.mobile 
+        width: 380px
+        height: 550px
+        overflow: hidden
+
+    .aboutblockone-content
+        width: 75%
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        margin-top: 150px
+        position: relative
+        left: 130px
+        @include mixins.tablet
+            left: 0px
+        @include mixins.mobile
+            left: 0px
+        @include mixins.tablet 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-top: 0px
+            margin-bottom: 50px
+            width: 100%
+        @include mixins.mobile
+            margin-top: 100px
+
+        h2
+            font-size: 70px
+            @include mixins.tablet 
+                margin-bottom: 20px
+                position: relative
+                left: 100px
+            @include mixins.mobile 
+                font-size: 35px
+
+        p
+            width: 70%
+            text-align: left
+            font-size: 20px
+            line-height: 35px
+            @include mixins.tablet
+                text-align: center
+                width: 110%
+                position: relative
+                left: 100px
+            @include mixins.mobile 
+                font-size: 15px
+                width: 195%
+
+    
+    .bg      
+        position: relative
+        left: 200px
+        top: 350px
+        width: 250px
+        height: 250px
+        z-index: 0
+        @include mixins.tablet
+            left: 120px
+            top: 100px
+        @include mixins.mobile
+            top: 280px
+            left: 100px
+            height: 200px
+            width: 200px
+            z-index: 0

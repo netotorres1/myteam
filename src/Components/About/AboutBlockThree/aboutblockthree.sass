@@ -1,0 +1,82 @@
+@use './../../../styles/variables'
+@use './../../../styles/mixins'
+
+.container-aboutblockthree
+    width: 100vw
+    background-color: variables.$sacramentoStateGreen
+    font-family: variables.$font-family
+    color: variables.$white
+    display: flex 
+    justify-content: center
+    align-items: center
+    height: 500px
+    position: relative
+    @include mixins.tablet 
+        width: 768px
+        height: 350px
+        overflow: hidden
+    @include mixins.mobile 
+        width: 380px
+        height: 650px
+
+    .bg
+        width: 250px
+        height: 250px
+        position: absolute
+        right: 1350px
+        bottom: 250px
+        @include mixins.tablet 
+            width: 200px
+            height: 200px
+            right: 570px
+            bottom: 250px
+        @include mixins.mobile 
+            right: 280px
+            bottom: 520px
+
+    .aboutblockthree-content
+        width: 75%
+        height: 60%
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: space-between
+        @include mixins.tablet 
+            height: 35%
+            width: 100%
+        @include mixins.mobile 
+            justify-content: center
+        
+        h2
+            font-size: 50px
+            @include mixins.tablet 
+                font-size: 40px
+            @include mixins.mobile 
+                width: 80%
+                font-size: 30px
+                margin-bottom: 40px
+                margin-left: 35px
+                margin-top: 50px
+
+        div
+            display: flex
+            flex-direction: row
+            width: 100%
+            justify-content: space-around
+            @include mixins.mobile 
+                width: 100%
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+            img
+                width: 13%
+                height: 40px
+                margin: 20px
+                @include mixins.tablet 
+                    width: 100px
+                    height: 20px
+                @include mixins.mobile 
+                    width: 50%
+                    height: 30px
+                    margin-bottom: 30px

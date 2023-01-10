@@ -13,6 +13,9 @@
     @include mixins.mobile 
         width: 380px
         height: 110px
+        z-index: 2
+        position: fixed
+        
 
     .container-content
         width: 75%
@@ -38,13 +41,14 @@
                 margin-right: 20px
                 background-color: transparent
                 border: none
-                z-index: 1
+                z-index: 2
 
         .navbar
             display: flex
             flex-direction: row
             width: 100%
-            justify-content: space-between   
+            justify-content: space-between  
+            
             .bgnav
                 display: none
                 @include mixins.tablet
@@ -54,6 +58,7 @@
             nav 
                 @include mixins.mobile 
                     display: none
+                    z-index: 3
   
 
             img 
@@ -79,21 +84,38 @@
                 &:hover
                     color: variables.$lightCoral
                     cursor: pointer
+            .btncontact
+                padding: 10px
+                padding-left: 20px
+                padding-right: 20px
+                color: variables.$white
+                border: none
+                font-size: 18px
+                background-color: transparent
+                font-weight: bold
+                border: 3px solid variables.$white
+                border-radius: 50px
+                @include mixins.mobile
+                    width: 60%
+                    margin-left: 40px
+                    position: relative
+                    bottom: 70px
 
         .open
 
             display: flex
             flex-direction: column
             background-color: red
-            position: absolute
-            width: 280px
-            right: -4px
+            position: fixed
+            width: 300px
+            right: -20px
             bottom: 0px
             height: 100vh
             padding-top: 200px
-            z-index: 0
+            z-index: 2
             background-color: variables.$midnightGreen
             box-shadow: -121px 123px 0px 123px rgba(0,0,0,0.74)
+            
 
             .bgnav
                 display: none
@@ -118,25 +140,27 @@
                     font-size: 20px
                     
 
-        .btncontact
-            padding: 10px
-            padding-left: 20px
-            padding-right: 20px
-            color: variables.$white
-            border: none
-            font-size: 18px
-            background-color: transparent
-            font-weight: bold
-            border: 3px solid variables.$white
-            border-radius: 50px
-            @include mixins.mobile
-                width: 60%
-                margin-left: 40px
-                position: relative
-                bottom: 70px
+        
 
             &:hover
                 color: variables.$policeBlue
                 background-color: variables.$white
                 cursor: pointer
+            
+            .btncontact
+                padding: 10px
+                padding-left: 20px
+                padding-right: 20px
+                color: variables.$white
+                border: none
+                font-size: 18px
+                background-color: transparent
+                font-weight: bold
+                border: 3px solid variables.$white
+                border-radius: 50px
+                @include mixins.mobile
+                    width: 60%
+                    margin-left: 40px
+                    position: relative
+                    bottom: 70px
 

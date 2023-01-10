@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './footer.sass'
 
@@ -16,8 +17,8 @@ const Footer = () => {
                 <div className='container-left-logo'>
                     <img className='logo' src={logo} />
                     <div>
-                        <button>home</button>
-                        <button>about</button>
+                        <Link to={'/'}><button>home</button></Link>
+                        <Link to={'/about'}><button>about</button></Link>
                     </div>
                 </div>
                 <div className='container-left-address'>

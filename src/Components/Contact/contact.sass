@@ -1,0 +1,137 @@
+@use './../../styles/variables'
+@use './../../styles/mixins'
+
+.container-contact
+    width: 100vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 700px
+    font-family: variables.$font-family
+    background-color: variables.$midnightGreen
+    color: variables.$white
+    overflow: hidden
+    @include mixins.tablet
+        height: 1300px
+        width: 768px
+    @include mixins.mobile 
+        width: 380px
+        height: 1300px
+
+    .bg1
+        width: 300px
+        height: 300px
+        position: relative
+        right: 790px
+        top: 200px
+        @include mixins.tablet 
+            right: 400px
+            top: 80px
+        @include mixins.mobile 
+            display: none
+    .bg2
+        width: 300px
+        height: 300px
+        position: relative
+        bottom: 190px
+        left: 780px
+        @include mixins.tablet 
+            left: 400px
+            bottom: 40px
+        @include mixins.mobile 
+            left: 200px
+            top: 190px
+        
+
+    .contact-content
+        width: 75%
+        height: 70%
+        display: flex 
+        flex-direction: row
+        justify-content: space-between
+        @include mixins.tablet 
+            flex-direction: column
+            width: 70%
+        @include mixins.mobile
+            width: 100%
+            padding-top: 100px
+    
+        .container-left
+            width: 50%
+            @include mixins.tablet 
+                width: 100%
+
+            h2
+                font-size: 70px
+                @include mixins.tablet 
+                    text-align: center
+                @include mixins.mobile
+                    font-size: 35px
+            h3
+                font-size: 30px
+                color: variables.$lightCoral
+                margin-top: 30px
+                @include mixins.tablet 
+                    text-align: center
+            
+            .container-left-content
+                 div
+                    display: flex 
+                    flex-direction: row
+                    align-items: center
+                    @include mixins.mobile 
+                        width: 100%
+
+                    img
+                        margin: 20px
+            
+        .container-right
+            width: 50%
+            @include mixins.tablet 
+                flex-direction: column
+                width: 100%
+                margin-top: 50px
+
+                
+            form
+                @include mixins.mobile 
+                width: 90%
+                margin-left: 20px
+                background-color: transparent
+                display: flex
+                flex-direction: column
+                height: 100%
+                justify-content: space-between
+
+                input
+                    padding: 20px
+                    background-color: transparent
+                    border: none
+                    border-bottom: 2px solid variables.$raptureBlue
+                    @include mixins.tablet 
+                        margin-bottom: 30px
+                
+                input::placeholder
+                    color: variables.$raptureBlue
+                    font-family: variables.$font-family
+
+                textarea::placeholder
+                    color: variables.$raptureBlue
+                    font-family: variables.$font-family
+
+                textarea
+                    padding: 20px
+                    background-color: transparent
+                    border: none
+                    border-bottom: 2px solid variables.$raptureBlue
+                    @include mixins.tablet 
+                        margin-bottom: 30px
+                button
+                    padding: 20px
+                    width: 150px
+                    border-radius: 30px
+                    border: none
+                    font-size: 15px
+                    font-weight: bold
+

@@ -10,13 +10,13 @@
     flex-direction: column
     font-family: variables.$font-family
     color: variables.$white
-    background-color: variables.$sacramentoStateGreen
+    background-color: variables.$deepJungleGreen
     overflow: hidden
     @include mixins.tablet 
         width: 768px
     @include mixins.mobile 
         width: 380px
-        height: 1150px
+        height: 1250px
 
     .bg
         width: 250px
@@ -26,6 +26,9 @@
         @include mixins.tablet 
             left: 400px
             bottom: 700px
+        @include mixins.mobile 
+            left: 190px
+            bottom: 1100px
 
     .homeblocktwo-content
         width: 75%
@@ -53,7 +56,9 @@
                 width: 70%
                 margin-bottom: 50px
             @include mixins.mobile 
-                margin-left: 70px
+                margin-left: 100px
+                font-size: 40px
+                width: 80%
 
     .container-right
         width: 45%
