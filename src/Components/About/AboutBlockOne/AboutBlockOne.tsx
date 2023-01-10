@@ -15,7 +15,7 @@ const AboutBlockOne = () => {
                 best products and experiences. We’ll bring those teams to you.
             </p>
         </div>
-        <img className='bg' src={bg} />
+        <img alt='Background' className='bg' src={bg} />
     </section>
   )
 }

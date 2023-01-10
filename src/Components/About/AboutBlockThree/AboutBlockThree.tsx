@@ -16,11 +16,11 @@ const AboutBlockThree = () => {
         <div className='aboutblockthree-content'>
             <h2>Some of our clients</h2>
             <div>
-                <img src={theverge} />
-                <img src={jakartapost} />
-                <img src={theguardian} />
-                <img src={techradar} />
-                <img src={gadgets} />
+                <img alt='The Verge' src={theverge} />
+                <img alt='Jakarta Post' src={jakartapost} />
+                <img alt='The Guardian' src={theguardian} />
+                <img alt='Tech Radar' src={techradar} />
+                <img alt='Gadgets' src={gadgets} />
             </div>
         </div>
     </section>

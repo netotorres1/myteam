@@ -40,7 +40,7 @@ const HomeBlockTwo = () => {
                 </div>
             </div>
         </div>
-        <img className='bg' src={bg} />
+        <img alt='Background' className='bg' src={bg} />
     </section>
   )
 }

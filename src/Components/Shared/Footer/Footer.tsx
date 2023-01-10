@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='footer-content'>
             <div className='container-left'>
                 <div className='container-left-logo'>
-                    <img className='logo' src={logo} />
+                    <img alt='Logo' className='logo' src={logo} />
                     <div>
                         <Link to={'/'}><button>home</button></Link>
                         <Link to={'/about'}><button>about</button></Link>
@@ -30,9 +30,9 @@ const Footer = () => {
             </div>
             <div className='container-right'>
                 <div className='container-right-media'>
-                    <img src={facebook} />
-                    <img src={pinterest} />
-                    <img src={twitter} />
+                    <img alt='Facebook' src={facebook} />
+                    <img alt='Pinterest' src={pinterest} />
+                    <img alt='Twitter' src={twitter} />
                 </div>
                 <span>Copyright 2020. All Rights Reserved</span>
             </div>

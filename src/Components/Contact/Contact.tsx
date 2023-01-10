@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 
 import './contact.sass'
 
@@ -10,42 +11,70 @@ const cog = require('./../../assets/icon-cog.svg').default;
 const chart = require('./../../assets/icon-chart.svg').default;
 
 const ContactComponent = () => {
+
+        const [form, SetForm] = useState({
+            name: '',
+            email: '',
+            companyName: '',
+            title:'',
+            message:''
+        })
+
+    const handleChange = (e:any) => {
+        let newProp:any = form;
+        newProp[e.target.name] = e.target.value;
+        SetForm({...newProp})
+
+    }
+
+    const [emptyValue, SetEmptyValue] = useState(false)
+
+    const handleSubmit = (e:any) => {
+        e.preventDefault();
+        let emptyValues = Object.values(form).some(obj => obj === '');
+        SetEmptyValue(emptyValues)
+    }
+
   return (
     <section className='container-contact'>
-        <img className='bg1' src={bg1} />
+        <img alt='Background' className='bg1' src={bg1} />
         <div className='contact-content'>
             <div className='container-left'>
                 <h2>Contact</h2>
                 <h3>Ask us about</h3>
                 <div className='container-left-content'>
                     <div>
-                        <img src={person} />
+                        <img alt='Icon' src={person} />
                         <p>The quality of our talent network</p>
                     </div>
                     <div>
-                        <img src={cog} />
+                        <img alt='Icon' src={cog} />
                         <p>Usage & implementation of our software</p>
                     </div>
                     <div>
-                        <img src={chart} />
+                        <img alt='Icon' src={chart} />
                         <p>How we help drive innovation</p>
                     </div>
                 </div>
             </div>
             <div className='container-right'>
-                <form>
-                    <input type='text' placeholder='Name' />
-                    <input type='text' placeholder='Email Address' />
-                    <input type='text' placeholder='Company Name' />
-                    <input type='text' placeholder='Title' />
-                    <textarea placeholder='Message'>
-
+                <form onSubmit={(e) => {handleSubmit(e)}}>
+                    <input name='name' type='text' placeholder='Name' onChange={(e) => {handleChange(e)}} />
+                    {emptyValue && form['name'] === '' ? <span className='error'>This field is required</span> :<></> }
+                    <input name='email' type='text' placeholder='Email Address' onChange={(e) => {handleChange(e)}} />
+                    {emptyValue && form['email'] === '' ? <span className='error'>This field is required</span> :<></> }
+                    <input name='companyName' type='text' placeholder='Company Name' onChange={(e) => {handleChange(e)}} />
+                    {emptyValue && form['companyName'] === '' ? <span className='error'>This field is required</span> :<></> }
+                    <input name='title' type='text' placeholder='Title' onChange={(e) => {handleChange(e)}} />
+                    {emptyValue && form['title'] === '' ? <span className='error'>This field is required</span> :<></> }
+                    <textarea name='message' placeholder='Message' onChange={(e) => {handleChange(e)}}>
                     </textarea>
-                    <button>submit</button>
+                    {emptyValue && form['message'] === '' ? <span className='error'>This field is required</span> :<></> }
+                    <button type='submit'>submit</button>
                 </form>
             </div>
         </div>
-        <img className='bg2' src={bg2} />
+        <img alt='Background' className='bg2' src={bg2} />
     </section>
   )
 }
