@@ -9,8 +9,9 @@ React | Typescript | SASS/SCSS | HTML | CSS
 <h2>Project --> <a href="https://stirring-pie-10f63e.netlify.app/">Link</a></h2>
 <hr>
 
-![1](https://user-images.githubusercontent.com/88563801/211562543-d1a69157-5a39-4878-bf3a-fb1834fcbc7c.PNG)
 
-![2](https://user-images.githubusercontent.com/88563801/211562295-4ccc5d6e-b4f9-44e9-a6b7-832db72896f8.PNG)
+![Capamyteam](https://user-images.githubusercontent.com/88563801/212521810-6608e103-b795-441e-81dc-308fdd7dffc6.png)
 
-![3](https://user-images.githubusercontent.com/88563801/211562314-edcb6a55-52a9-455f-a64e-6e337f1fb2f4.PNG)
+![capafootermyplanets](https://user-images.githubusercontent.com/88563801/212521815-87f61639-0528-4efc-b861-9fffca286c03.png)
+
+![mobilemyteam](https://user-images.githubusercontent.com/88563801/212521819-c5fc6335-2d8c-4544-9217-0b4127dfd8dd.png)
